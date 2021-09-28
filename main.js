@@ -1,36 +1,108 @@
-//question 1
-let myNumber;
+/* Practice Assignment 3:
 
-//question 2
-myNumber = 5;
+Complete this javascript file according to the individual instructions
+given in the comments. 
 
-//question 2
-let myOtherNumber = 5;
+*** DO NOT CHANGE any of the code that you are not instructed to. */
 
-//question 3
-let myTotal = myNumber * myOtherNumber;
+// 1) Construct a basic IF statement that assigns "Informatics" to the
+// myDept variable IF the value of myNumber is greater than 1.
+// The variables are already declared.
+// Do not change the existing code.
 
-//quesiton 5
-let myName = "";
-let myCombo = "";
-myCombo = myNumber * myOtherNumber;
+const question1 = (myNumber) => {
+    let myDept;
+    /////// write your IF statement below this line /////////
+  if(myNumber < 1)
+    myDept = "Informatacis";
+else
+    myDept = 0;
+    /////// write your IF statement above this line /////////
+    return myDept;
+  };
+  
+  // 2) Construct an IF statement that assigns "JavaScript" to the
+  // myLang variable IF the length property of myValue is equal to 10.
+  // Add an ELSE statement that assigns "Python" otherwise.
+  // The variables are already declared.
+  // Do not change the existing code.
+  
+  const question2 = (myValue) => {
+    let myLang;
+    /////// write your IF statement below this line /////////
+    if(myValue.length(10))
+        myLang = "Javascript";
+    else
+        myLang = 0;
+    /////// write your IF statement above this line /////////
+    return myLang;
+  };
+  
+  // 3) Copy the IF / ELSE statement from #2 and paste it below.
+  // Add an ELSE IF statement to it that checks if the length property of
+  // myValue is greater than 3. If true, assign "PHP" to myLang.
+  // The variables are already declared.
+  // Do not change the existing code.
+  
+  const question3 = (myValue) => {
+    let myLang;
+    /////// write your IF statement below this line /////////
+    if(myValue.length(10))
+        myLang = "Javascript";
+    else if(myValue.lenght(3))
+        myLang = "PHP";
+    else
+        myLang = 0;  
+    /////// write your IF statement above this line /////////
+    return myLang;
+  };
+  
+  // 4) Construct a SWITCH statement that will assign the following values to the variable
+  // myFaveFood based on the value of myNumber the SWITCH statement receives:
+  // 1 = Pizza, 2 = Hamburger, 3 = Ice Cream, 4 = Sushi, Anything else = Pho
+  // The variables are already declared.
+  // Do not change the existing code.
+  
+  const question4 = (myNumber) => {
+    let myFaveFood;
+    /////// write your SWITCH statement below this line /////////
+  switch(myNumber)
+  {
+    case 1:
+        console.log("My favorite food is Pizza")
+        break;
+    case 2:
+        console.log("My favorite food is Hambugers")
+        break;
+    case 3:
+        console.log("My favorite food is Ice Cream")
+        break;
+    case 4:
+        console.log("My favorite food is Sushi")
+        break;
+    default:
+        console.log("PHO")
+  }
+    /////// write your SWITCH statement above this line /////////
+    return myFaveFood;
+  };
+  
+  // 5) Construct a TERNARY statement with the ternary operator
+  // that checks if the variable myTemp is greater than or equal to 75.
+  // If true, assign the value "Great weather!" to the variable myWeather.
+  // If false, assign the value "Still cold." to the variable myWeather.
+  // This ternary operator statement should just be one line of code.
+  // The variables are already declared.
+  // Do not change the existing code.
+  
+  const question5 = (myTemp) => {
+    let myWeather;
+    /////// write your TERNARY OPERATOR statement below this line /////////
+  return(myTemp ? >= '75')
 
-//question 6
-let myOtherCombo;
- myOtherCombo = myNumber + myOtherNumber;
+  console.log(myTemp(true));
 
-//question 7
-let myRemainder;
-myRemainder = myNumber % 5;
-
-//question 8
-let i;
-i = 2;
-
-//question 9
-let int;
-int = 4;
-
-//question 10
-let myBoolean;
-myBoolean = false;
+  console.log(myTemp(false));
+    /////// write your TERNARY OPERATOR statement above this line /////////
+    return myWeather;
+  };
